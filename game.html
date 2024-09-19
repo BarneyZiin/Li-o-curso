@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Matemática - Problemas Diversos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <div class="game-container">
+            <div class="tab-container">
+                <button class="tab-btn" onclick="openTab('porcentagem')">Porcentagem</button>
+                <button class="tab-btn" onclick="openTab('fracao')">Frações</button>
+                <button class="tab-btn" onclick="openTab('regraTres')">Regra de Três</button>
+                <button class="tab-btn" onclick="openTab('equacao')">Equações</button>
+            </div>
+
+            <div id="porcentagem" class="tab-content">
+                <h2>Problema de Porcentagem</h2>
+                <p id="question-porcentagem"></p>
+                <input type="number" id="answer-porcentagem" class="input-answer" placeholder="Digite sua resposta">
+                <button class="btn" onclick="checkAnswer('porcentagem')">Verificar Resposta</button>
+                <p id="feedback-porcentagem"></p>
+                <p><strong>Pontuação:</strong> <span id="score-porcentagem">0</span></p>
+            </div>
+
+            <div id="fracao" class="tab-content">
+                <h2>Problema de Fração</h2>
+                <p id="question-fracao"></p>
+                <input type="number" id="answer-fracao" class="input-answer" placeholder="Digite sua resposta">
+                <button class="btn" onclick="checkAnswer('fracao')">Verificar Resposta</button>
+                <p id="feedback-fracao"></p>
+                <p><strong>Pontuação:</strong> <span id="score-fracao">0</span></p>
+            </div>
+
+            <div id="regraTres" class="tab-content">
+                <h2>Problema de Regra de Três</h2>
+                <p id="question-regraTres"></p>
+                <input type="number" id="answer-regraTres" class="input-answer" placeholder="Digite sua resposta">
+                <button class="btn" onclick="checkAnswer('regraTres')">Verificar Resposta</button>
+                <p id="feedback-regraTres"></p>
+                <p><strong>Pontuação:</strong> <span id="score-regraTres">0</span></p>
+            </div>
+
+            <div id="equacao" class="tab-content">
+                <h2>Problema de Equações</h2>
+                <p id="question-equacao"></p>
+                <input type="number" id="answer-equacao" class="input-answer" placeholder="Digite sua resposta">
+                <button class="btn" onclick="checkAnswer('equacao')">Verificar Resposta</button>
+                <p id="feedback-equacao"></p>
+                <p><strong>Pontuação:</strong> <span id="score-equacao">0</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
